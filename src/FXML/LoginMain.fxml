@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="screen" prefHeight="353.0" prefWidth="600.0" style="-fx-background-color: #BA55D3;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.LoginController">
+   <children>
+      <JFXTextField fx:id="userName" layoutX="184.0" layoutY="142.0" prefHeight="30.0" prefWidth="233.0" promptText="[ Enter Your UserName ]" unFocusColor="#f5eaea">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="passwordField" focusColor="#567bd7" layoutX="184.0" layoutY="184.0" prefHeight="30.0" prefWidth="233.0" promptText="[ Enter Your Password ]" unFocusColor="#eeecec">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXButton fx:id="signUp" layoutX="502.0" layoutY="14.0" onAction="#signUp" prefHeight="41.0" prefWidth="84.0" style="-fx-background-color: #8B008B; -fx-border-color: #dacaca;" text="SignUp" textFill="#dacaca">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="login" layoutX="333.0" layoutY="232.0" onAction="#loginAction" prefHeight="30.0" prefWidth="84.0" style="-fx-background-color: #6A5ACD;" text="Login" textFill="#dacaca">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXCheckBox layoutX="184.0" layoutY="232.0" prefHeight="30.0" prefWidth="125.0" text="Remember Me" textFill="#dacaca">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXCheckBox>
+      <JFXButton fx:id="forgotPassword" layoutX="212.0" layoutY="286.0" prefHeight="30.0" prefWidth="177.0" text="Forgot your Password?" textFill="#dacaca" underline="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <ImageView fx:id="logo" disable="true" fitHeight="94.0" fitWidth="108.0" layoutX="254.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/282184.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="man" fitHeight="30.0" fitWidth="27.0" layoutX="139.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/17004-user-image-with-black-background1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="castle" fitHeight="30.0" fitWidth="27.0" layoutX="139.0" layoutY="186.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/password_3715.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="progress" disable="true" fitHeight="41.0" fitWidth="125.0" layoutX="239.0" layoutY="316.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/30.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

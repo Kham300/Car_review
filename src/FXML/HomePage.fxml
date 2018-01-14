@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXToolbar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.HomePageController">
+   <children>
+      <JFXToolbar layoutX="165.0" layoutY="-2.0" prefHeight="59.0" prefWidth="540.0" style="-fx-background-color: #219666;">
+         <center>
+            <Text fx:id="welcome" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome" textAlignment="RIGHT" wrappingWidth="78.576171875" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+         </center>
+         <right>
+            <VBox prefHeight="59.0" prefWidth="60.0" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXButton fx:id="btnLogOut" onAction="#actionLogOut" text="Log out" />
+                  <JFXButton fx:id="btnExit" onAction="#actionExit" text="Exit" />
+               </children>
+            </VBox>
+         </right>
+      </JFXToolbar>
+      <AnchorPane fx:id="holderPane" layoutX="167.0" layoutY="60.0" prefHeight="463.0" prefWidth="531.0" />
+      <Pane prefHeight="533.0" prefWidth="166.0" style="-fx-background-color: #219666;">
+         <children>
+            <ImageView fitHeight="59.0" fitWidth="84.0" layoutX="54.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../resources/images/282184.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="50.0" layoutY="73.0" prefHeight="41.0" prefWidth="69.0" text="A v i t o" textAlignment="JUSTIFY">
+               <font>
+                  <Font name="Baiduan Number" size="25.0" />
+               </font>
+            </Label>
+            <Line endX="50.0" layoutX="20.0" layoutY="114.0" startX="-20.0" stroke="#efebf2" />
+            <AnchorPane layoutX="1.0" layoutY="250.0" prefHeight="249.0" prefWidth="166.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" text="Dashboard" textFill="#efebf2">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font>
+                  </Label>
+                  <JFXButton layoutX="22.0" layoutY="76.0" prefHeight="24.0" prefWidth="107.0" text="MY CARS">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="22.0" layoutY="107.0" prefHeight="24.0" prefWidth="107.0" text="ABOUT">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="btnHome" layoutX="22.0" layoutY="45.0" onAction="#actionHome" prefHeight="24.0" prefWidth="107.0" text="HOME">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <Label layoutX="119.0" layoutY="81.0" prefHeight="22.0" prefWidth="21.0" style="-fx-background-color: #31afee;" text="  0" textAlignment="RIGHT" textFill="#0e1d24" />
+                  <JFXButton layoutX="30.0" layoutY="179.0" prefHeight="24.0" prefWidth="107.0" style="-fx-border-color: #FFFF;" text="CONTACT US" textFill="#462e2e">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="6.0" layoutY="151.0" prefHeight="59.0" prefWidth="157.0">
+               <children>
+                  <Label layoutX="4.0" layoutY="7.0" prefHeight="41.0" prefWidth="121.0" text="Find" textAlignment="JUSTIFY">
+                     <font>
+                        <Font name="Baiduan Number" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="42.0" layoutY="18.0" prefHeight="41.0" prefWidth="101.0" text="Everything" textAlignment="JUSTIFY" textFill="#efebf2">
+                     <font>
+                        <Font name="Baiduan Number" size="21.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="45.0" prefHeight="31.0" prefWidth="69.0" text="you want" textAlignment="JUSTIFY">
+                     <font>
+                        <Font name="Baiduan Number" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Line endX="50.0" layoutX="98.0" layoutY="408.0" startX="-80.0" stroke="#efebf2" />
+         </children>
+      </Pane>
+      <Separator layoutX="167.0" layoutY="61.0" prefHeight="1.0" prefWidth="531.0" />
+   </children>
+</AnchorPane>
